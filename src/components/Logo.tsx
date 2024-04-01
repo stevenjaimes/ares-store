@@ -8,7 +8,7 @@ export const Icon = {
       viewBox="0 0 1024 1024"
       {...props}
       fill="url(#grad1)"
-      stroke-width="0"
+      strokeWidth="0"
     >
       <defs>
         <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">

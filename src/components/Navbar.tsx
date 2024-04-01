@@ -1,9 +1,10 @@
+"use client";
+
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icon } from "./Logo";
 import Link from "next/link";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
-import { Ghost } from "lucide-react";
 import Cart from "./Cart";
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
                         variant: "ghost",
                       })}
                     >
-                      Sign in
+                      Iniciar sesión
                     </Link>
                   )}
 
@@ -53,7 +54,7 @@ const Navbar = () => {
                         variant: "ghost",
                       })}
                     >
-                      Create account
+                      Crear Cuenta
                     </Link>
                   )}
 
@@ -61,24 +62,20 @@ const Navbar = () => {
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   ) : null}
 
-                  { user ?  null 
-                  : (
-                  
+                  {user ? null : (
                     <div className="flex lg:ml-6">
-                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                      <span
+                        className="h-6 w-px bg-gray-200"
+                        aria-hidden="true"
+                      />
                     </div>
-                  
                   )}
 
-
-                {/* Cart */}
+                  {/* Cart */}
 
                   <div className="ml-4 flow-root lg:ml-6">
                     <Cart />
                   </div>
-                  
-
-
                 </div>
               </div>
             </div>
