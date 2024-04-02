@@ -1,19 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	images: {
-		remotePatterns: [
-			{
-				protocol: "http",
-				hostname: "localhost",
-			},
-			{
-				protocol: "https",
-				hostname: "home-style-nook.vercel.app", 
-             
+const nextConfig = {}
 
-			},
-		],
-	},
-};
-
-module.exports = nextConfig;
+module.exports = nextConfig
