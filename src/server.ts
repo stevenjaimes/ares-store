@@ -7,6 +7,14 @@ import { appRouter } from "./trpc";
 
 const app = express();
 
+const cors= (req: any, res: any, next: any) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+};
+app.use(cors);
+
+
 const PORT = Number(process.env.PORT) || 3000;
 
 const createContext = ({
