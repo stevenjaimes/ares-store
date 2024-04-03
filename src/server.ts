@@ -5,6 +5,7 @@ import next from "next";
 import * as trpcExpress from "@trpc/server/adapters/express";
 import { appRouter } from "./trpc";
 import nextBuild from 'next/dist/build';
+import path from 'path';
 
 const app = express();
 
