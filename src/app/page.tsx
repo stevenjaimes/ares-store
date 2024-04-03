@@ -14,7 +14,7 @@ const perks = [
       "Get your assets delivered yo your emain in seconds and download ",
   },
   {
-    name: "Guantareed Quality",
+    name: "Guantareed Calidad",
     Icon: CheckCircle,
     description:
       "Cada asset on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee ",
