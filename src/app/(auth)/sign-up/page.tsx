@@ -95,6 +95,12 @@ const Page = () => {
                     })}
                     placeholder="Tu Email"
                   />
+
+                  {errors?.email && (
+                    <p className="px-1 text-sm text-red-600">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
 
                 <div className="grid gap-1 py-2 ">
@@ -107,6 +113,11 @@ const Page = () => {
                     })}
                     placeholder="Contraseña"
                   />
+                  {errors?.password && (
+                    <p className="px-1 text-sm text-red-600">
+                      {errors.password.message}
+                    </p>
+                  )}
                 </div>
 
                 <Button> Iniciar sesión</Button>

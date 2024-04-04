@@ -6,9 +6,13 @@ import Link from "next/link";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
 import Cart from "./Cart";
+import { getServerSideUser } from "@/lib/payload-utils";
+import { cookies }  from 'next/headers'
 
-const Navbar = () => {
-  const user = null;
+// eslint-disable-next-line @next/next/no-async-client-component
+const Navbar = async () => {
+  const nextCookies = cookies();
+  const { user} = await getServerSideUser(nextCookies);
 
   return (
     <div className="bg-white sticky z-50 top-0 inset-x-0  h-16">
