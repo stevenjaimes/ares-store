@@ -1,3 +1,5 @@
+'use client'
+
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icon } from "./Logo";
 import Link from "next/link";
@@ -9,6 +11,8 @@ import { cookies }  from 'next/headers'
 import UserAccountNav from "./UserAccountNav";
 
 
+
+// eslint-disable-next-line @next/next/no-async-client-component
 const Navbar = async () => {
   const nextCookies = cookies();
   const { user} = await getServerSideUser(nextCookies);
