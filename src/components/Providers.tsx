@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { trpc } from "@/trpc/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -19,13 +19,12 @@ const Providers = ({children}: PropsWithChildren) =>{
                         ...options,
                         credentials: 'include',
                     })
-                }
-            })
+                },
+            }),
 
-        ]
-    }
-        
-    ))
+        ],
+    })
+    )
 
 return(
     <trpc.Provider client={trpcClient} queryClient={queryClient}>
@@ -34,7 +33,7 @@ return(
         
         </QueryClientProvider> 
     </trpc.Provider>
-)
+)   
 }
 
 export default Providers;

@@ -18,7 +18,6 @@ import {
   } from "@/lib/validators/account-credentials-validators";
 import { trpc } from '@/trpc/client'
 import { toast } from 'sonner'
-import { ZodError } from 'zod'
 import { useRouter, useSearchParams } from 'next/navigation'
 
 const Page = () => {
@@ -83,8 +82,8 @@ const Page = () => {
           <div className='flex flex-col items-center space-y-2 text-center'>
             <Icon.logo className='h-20 w-20' />
             <h1 className='text-2xl font-semibold tracking-tight'>
-              Inicia sesión en tu {isSeller ? 'seller' : ''}{' '}
-              cuenta
+              Inicia sesión en tu cuenta como {isSeller ? 'vendedor' : 'cliente'}{' '}
+              
             </h1>
 
             <Link
