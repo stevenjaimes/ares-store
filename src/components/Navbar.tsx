@@ -1,5 +1,3 @@
-'use client'
-
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Icon } from "./Logo";
 import Link from "next/link";
@@ -7,15 +5,13 @@ import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
 import Cart from "./Cart";
 import { getServerSideUser } from "@/lib/payload-utils";
-import { cookies }  from 'next/headers'
 import UserAccountNav from "./UserAccountNav";
+import { useUser } from "@/hooks/useSWR";
+import { User } from "@/payload-types";
 
+const Navbar = async ()=> {  
 
-
-// eslint-disable-next-line @next/next/no-async-client-component
-const Navbar = async () => {
-  const nextCookies = cookies();
-  const { user} = await getServerSideUser(nextCookies);
+  const user = await getServerSideUser();  
 
   return (
     <div className="bg-white sticky z-50 top-0 inset-x-0  h-16">
@@ -53,7 +49,7 @@ const Navbar = async () => {
                   )}
 
                   {user ? (
-                    <UserAccountNav user={user} />
+                    <UserAccountNav user={user.user} />
                   ) : (
                     <Link
                       href="/sign-up"

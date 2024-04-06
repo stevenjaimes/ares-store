@@ -1,10 +1,11 @@
 import { User } from '../payload-types'
 import { ReadonlyRequestCookies } from 'next/dist/server/web/spec-extension/adapters/request-cookies'
 import { NextRequest } from 'next/server'
+import { cookies as getCookies } from 'next/headers'
 
-export const getServerSideUser = async (
-  cookies: NextRequest['cookies'] | ReadonlyRequestCookies
-) => {
+export const getServerSideUser = async () => {
+
+  const cookies = getCookies()
   const token = cookies.get('payload-token')?.value
 
   const meRes = await fetch(
