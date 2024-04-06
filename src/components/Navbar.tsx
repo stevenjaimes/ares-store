@@ -11,17 +11,10 @@ import { useUser } from "@/hooks/useSWR";
 import { User } from "@/payload-types";
 
 
-// En la página que usa getServerSideUser
-export const getStaticProps = async () => {
-  // Deja la función vacía o devuelve null
-  return {
-      // No es necesario devolver propiedades
-  };
-};
 
 const Navbar = async ()=> {  
 
-  const user = await getServerSideUser();  
+ const user=''
 
   return (
     <div className="bg-white sticky z-50 top-0 inset-x-0  h-16">
@@ -59,7 +52,7 @@ const Navbar = async ()=> {
                   )}
 
                   {user ? (
-                    <UserAccountNav user={user.user} />
+                    <p></p>
                   ) : (
                     <Link
                       href="/sign-up"
