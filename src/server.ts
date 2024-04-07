@@ -26,6 +26,8 @@ const createContext = ({
 }: trpcExpress.CreateExpressContextOptions) => ({
   req,
   res,
+  payload: getPayloadClient(),
+  logger: { level: 'debug' },
 });
 
 export type ExpressContext = inferAsyncReturnType<typeof createContext>;

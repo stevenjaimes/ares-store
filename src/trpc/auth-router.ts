@@ -23,7 +23,7 @@ export const authRouter = router({
       });
 
       if (users.length !== 0)
-        throw new TRPCError({ code: 'CONFLICT' })
+        throw new TRPCError({ code: 'CONFLICT', message: 'El usuario ya existe' });
 
         await payload.create({
         collection: 'users',
@@ -74,8 +74,14 @@ export const authRouter = router({
       })
 
       return { success: true }
-    } catch (err) {
-      throw new TRPCError({ code: 'UNAUTHORIZED' })
+    } catch (err:any) {
+      if (err.code=== 'INVALID_CREDENTIALS') {
+        throw new TRPCError({ code: 'UNAUTHORIZED', message: 'Credenciales inválidas' });
+      } else if (err.code === 'USER_NOT_FOUND') {
+        throw new TRPCError({ code: 'UNAUTHORIZED', message: 'Usuario no encontrado' });
+      } else {
+        throw new TRPCError({ code: 'INTERNAL_SERVER_ERROR', message: 'Error interno del servidor' });
+      }
     }
   }),
 
