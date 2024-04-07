@@ -9,12 +9,13 @@ import { getServerSideUser } from "@/lib/payload-utils";
 import UserAccountNav from "./UserAccountNav";
 import { useUser } from "@/hooks/useSWR";
 import { User } from "@/payload-types";
-
+import { cookies }  from 'next/headers'
 
 
 const Navbar = async ()=> {  
 
- const user=''
+  const nextCookies = cookies()
+  const { user } = await getServerSideUser(nextCookies)
 
   return (
     <div className="bg-white sticky z-50 top-0 inset-x-0  h-16">
@@ -52,7 +53,7 @@ const Navbar = async ()=> {
                   )}
 
                   {user ? (
-                    <p></p>
+                   <UserAccountNav user={user} /> 
                   ) : (
                     <Link
                       href="/sign-up"

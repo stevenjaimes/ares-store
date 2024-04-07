@@ -24,7 +24,7 @@ const UserAccountNav = ({ user }: { user: User|null }) => {
           variant='ghost'
           size='sm'
           className='relative'>
-          My account
+          Mi cuenta
         </Button>
       </DropdownMenuTrigger>
 
