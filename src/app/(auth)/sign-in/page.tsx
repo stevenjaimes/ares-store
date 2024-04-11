@@ -46,11 +46,10 @@ const Page = () => {
     trpc.auth.signIn.useMutation({
       onSuccess: async () => {
         toast.success('Has iniciado sesión')
-
-        router.refresh()
+     
 
         if (origin) {
-          router.push(`/${origin}`)
+          router.push(`/${origin}`)       
           return
         }
 
@@ -58,8 +57,9 @@ const Page = () => {
           router.push('/sell')
           return
         }
-
+          
         router.push('/')
+        router.refresh()   
       },
       onError: (err) => {
         if (err.data?.code === 'UNAUTHORIZED') {
@@ -152,7 +152,7 @@ const Page = () => {
               </div>
               <div className='relative flex justify-center text-xs uppercase'>
                 <span className='bg-background px-2 text-muted-foreground'>
-                  or
+                  o
                 </span>
               </div>
             </div>
