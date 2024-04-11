@@ -60,6 +60,7 @@ export const getPayloadClient = async ({
   try {
     cached.client = await cached.promise;
   } catch (e: unknown) {
+    console.error("Error al inicializar Payload");
     cached.promise = null;
     throw e;
   }

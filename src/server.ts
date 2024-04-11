@@ -75,7 +75,7 @@ const start = async () => {
   app.use((req, res) => nextHandler(req, res));
 
   nextApp.prepare().then(() => {
-    payload.logger.info("Next.js started");
+    payload.logger.info("Next.js ha iniciado");
 
     app.listen(PORT, async () => {
       payload.logger.info(

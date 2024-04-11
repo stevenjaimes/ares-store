@@ -61,6 +61,7 @@ export const authRouter = router({
     const { email, password } = input
     const { res } = ctx
 
+    
     const payload = await getPayloadClient()
 
     try {

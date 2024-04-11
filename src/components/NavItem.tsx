@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { PRODUCT_CATEGORIES } from "@/config";
 import { Button } from "./ui/button";

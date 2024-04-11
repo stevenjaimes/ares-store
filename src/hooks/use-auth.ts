@@ -19,7 +19,7 @@ export const useAuth = () => {
 
       if (!res.ok) throw new Error()
 
-      toast.success('Has iniciado sesión')
+      toast.success('Has finalizado sesión')
 
       router.push('/sign-in')
       router.refresh()
