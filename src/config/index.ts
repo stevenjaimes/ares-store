@@ -1,44 +1,45 @@
 export const PRODUCT_CATEGORIES = [
   {
-    label: "IU Kits",
-    value: "ui_kits" as const,
+    label: "Cocina",
+    value: "cocina" as const,
     featured: [
       {
-        name: "Editor picks",
-        href: "#",
-        imageSrc: "/nav/ui-kits/mixed.jpg",
+        name: "Escurridores",
+        href: "/productos?categoria=cocina&subcategoria=escurridores",
+        imageSrc: "/imagenes/categorias/cocina/escurridores.jpg",
       },
       {
-        name: "New Arrivals",
-        href: "/products?category=ui_kits&sort=desc",
-        imageSrc: "/nav/ui-kits/blue.jpg",
+        name: "Organizadores de alacenas",
+        href: "/productos?categoria=cocina&subcategoria=organizadores-alacenas",
+        imageSrc: "/imagenes/categorias/cocina/organizadores.jpg",
       },
       {
-        name: "Bestsellers",
-        href: "/products?category=ui_kits",
-        imageSrc: "/nav/ui-kits/purple.jpg",
+        name: "Utensilios de cocina",
+        href: "/productos?categoria=cocina&subcategoria=utensilios-cocina",
+        imageSrc: "/imagenes/categorias/cocina/utensilios-cocina.jpg",
       },
     ],
   },
   {
-    label: "Icons",
-    value: "icons" as const,
+    label: "Baño",
+    value: "baño" as const,
     featured: [
       {
-        name: "Favorite Icon Picks",
-        href: `/products?category=icons`,
-        imageSrc: "/nav/icons/picks.jpg",
+        name: "Toalleros",
+        href: "/productos?categoria=baño&subcategoria=toalleros",
+        imageSrc: "/imagenes/categorias/baño/toalleros.jpg",
       },
       {
-        name: "New Arrivals",
-        href: "/products?category=icons&sort=desc",
-        imageSrc: "/nav/icons/new.jpg",
+        name: "Organizadores de baño",
+        href: "/productos?categoria=baño&subcategoria=organizadores-baño",
+        imageSrc: "/imagenes/categorias/baño/organizadores-baño.jpg",
       },
       {
-        name: "Bestselling Icons",
-        href: "/products?category=icons",
-        imageSrc: "/nav/icons/bestsellers.jpg",
+        name: "Cortinas de ducha",
+        href: "/productos?categoria=baño&subcategoria=cortinas-ducha",
+        imageSrc: "/imagenes/categorias/baño/cortinas-ducha.jpg",
       },
     ],
   },
+  // ... agrega las demás categorías que deseas
 ];

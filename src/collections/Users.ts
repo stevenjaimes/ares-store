@@ -3,15 +3,15 @@ import { CollectionConfig } from "payload/types";
 export const Users: CollectionConfig = {
   slug: "users",
   auth: {
-    verify:{
-      generateEmailHTML: ({ token })=>{
-        return `<a href='${process.env.NEXT_PUBLIC_SERVER_URL}/verify-email?token=${token}'>Cuenta Verificada </a>`
+    verify: {
+      generateEmailHTML: ({ token }) => {
+        return `<a href='${process.env.NEXT_PUBLIC_SERVER_URL}/verify-email?token=${token}'>Cuenta Verificada </a>`;
+      },
     },
-   },
   },
-  access:{
-read: () => true,
-create: () => true,
+  access: {
+    read: () => true,
+    create: () => true,
   },
 
   fields: [
@@ -19,7 +19,7 @@ create: () => true,
       name: "role",
       defaultValue: "user",
       required: true,
-         type: "select",
+      type: "select",
       options: [
         {
           label: "Admin",
@@ -32,4 +32,4 @@ create: () => true,
       ],
     },
   ],
-}
+};

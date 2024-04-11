@@ -65,6 +65,7 @@ const Page = () => {
         if (err.data?.code === 'UNAUTHORIZED') {
           toast.error('Email o contraseña invalidos')
         }
+        toast.error('Email o contraseña invalidos')
       },
     })
 
@@ -100,7 +101,7 @@ const Page = () => {
           <div className='grid gap-6'>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className='grid gap-2'>
-                0<div className='grid gap-1 py-2'>
+                <div className='grid gap-1 py-2'>
                   <Label htmlFor='email'>Email</Label>
                   <Input
                     {...register('email')}
