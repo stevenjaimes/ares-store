@@ -8,22 +8,22 @@ import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
 
 const perks = [
   {
-    name: "Instant Delivery",
+    name: "Envío rápido y seguro",
     Icon: ArrowDownToLine,
     description:
-      "Get your assets delivered yo your emain in seconds and download ",
+      "Recibe tus productos en minutos y con total seguridad. ¡Entrega express para tu hogar!",
   },
   {
-    name: "Guantareed Calidad",
+    name: "Calidad garantizada",
     Icon: CheckCircle,
     description:
-      "Cada asset on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee ",
+      "Cada producto en nuestra plataforma es verificado por nuestro equipo para garantizar los más altos estándares de calidad. ¿No estás satisfecho? ¡Te ofrecemos una garantía de devolución de 30 días!",
   },
   {
-    name: "For the planet", 
+    name: "Comprometidos con el medio ambiente",
     Icon: Leaf,
     description:
-      "We've pledged 1% of sales to the preservation and restoration of the natural environmente. ",
+      "Nos comprometemos a destinar el 1% de nuestras ventas a la preservación y restauración del medio ambiente natural. ¡Cuidemos juntos nuestro planeta!",
   },
 ];
 
@@ -34,8 +34,8 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Tu mercado para activos digitales de {" "}
-            <span className="text-blue-600"> alta calidad </span>.
+          Tu destino para productos de hogar de{" "}
+            <span className="text-blue-600"> calidad excepcional</span>.
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
             {" "}

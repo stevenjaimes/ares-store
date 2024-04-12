@@ -11,7 +11,6 @@ import { cookies }  from 'next/headers'
 import MobileNav from "./MobileNav";
 
 
-
 const Navbar = async () => {  
 
   const nextCookies = cookies()
