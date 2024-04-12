@@ -16,7 +16,7 @@ export const PRODUCT_CATEGORIES = [
       {
         name: "Utensilios de cocina",
         href: "/productos?categoria=cocina&subcategoria=utensilios-cocina",
-        imageSrc: "/nav/cocina/utensilios-cocina.jpg",
+        imageSrc: "/nav/cocina/utensilios-cocina.jpeg",
       },
     ],
   },
@@ -27,17 +27,17 @@ export const PRODUCT_CATEGORIES = [
       {
         name: "Toalleros",
         href: "/productos?categoria=baño&subcategoria=toalleros",
-        imageSrc: "/imagenes/categorias/baño/toalleros.jpg",
+        imageSrc: "/nav/baños/toalleros.jpg",
       },
       {
         name: "Organizadores de baño",
         href: "/productos?categoria=baño&subcategoria=organizadores-baño",
-        imageSrc: "/imagenes/categorias/baño/organizadores-baño.jpg",
+        imageSrc: "/nav/baños/organizadores.jpg",
       },
       {
         name: "Cortinas de ducha",
         href: "/productos?categoria=baño&subcategoria=cortinas-ducha",
-        imageSrc: "/imagenes/categorias/baño/cortinas-ducha.jpg",
+        imageSrc: "/nav/baños/cortinas.jpg",
       },
     ],
   },
