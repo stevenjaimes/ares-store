@@ -6,17 +6,17 @@ export const PRODUCT_CATEGORIES = [
       {
         name: "Escurridores",
         href: "/productos?categoria=cocina&subcategoria=escurridores",
-        imageSrc: "/imagenes/categorias/cocina/escurridores.jpg",
+        imageSrc: "/nav/cocina/escurridores.jpg",
       },
       {
         name: "Organizadores de alacenas",
         href: "/productos?categoria=cocina&subcategoria=organizadores-alacenas",
-        imageSrc: "/imagenes/categorias/cocina/organizadores.jpg",
+        imageSrc: "/nav/cocina/organizadores.jpg",
       },
       {
         name: "Utensilios de cocina",
         href: "/productos?categoria=cocina&subcategoria=utensilios-cocina",
-        imageSrc: "/imagenes/categorias/cocina/utensilios-cocina.jpg",
+        imageSrc: "/nav/cocina/utensilios-cocina.jpg",
       },
     ],
   },
