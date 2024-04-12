@@ -4,6 +4,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import Hero from "@/components/Hero";
+
 
 
 const perks = [
@@ -32,6 +34,7 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper>
+        <Hero />
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Tu destino para productos de hogar de{" "}

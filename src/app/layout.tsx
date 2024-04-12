@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import { Toaster } from "sonner";
+import Hero from "@/components/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
