@@ -39,13 +39,13 @@ export default function Home() {
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">
             {" "}
-            Bienvenidos a Ares Store{" "}
+            ¡Bienvenidos a Ares Store, donde encontrarás lo mejor para tu hogar!{" "}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link href="/products" className={buttonVariants()}>
-              Browse Trending de todo{" "}
+              Explora lo más popular{" "}
             </Link>
-            <Button variant="ghost">Our quality promise &rarr; </Button>
+            <Button variant="ghost">Nuestra promesa de calidad &rarr; </Button>
           </div>
         </div>
         {/* TODO: List products   */}
