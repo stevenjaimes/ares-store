@@ -22,16 +22,16 @@ const Hero = () => {
           className="h-full w-full"
         >
           <SwiperSlide>
-       
-              <img src="/slider/slider-image-1.jpg"  alt="Image 1" className="absolute h-full w-full object-cover" />
+            <div className="h-full w-full relative">
+              <img src="/slider/slider-image-1.jpg"  alt="Image 1" />
       
-           
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-       
-            <img src="/slider/slider-image-2.jpg"  alt="Image 1" className="absolute h-full w-full object-cover" />
+            <div className="h-full w-full relative">
+            <img src="/slider/slider-image-2.jpg"  alt="Image 1" />
          
-       
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
